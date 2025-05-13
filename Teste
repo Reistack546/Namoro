@@ -1,0 +1,121 @@
+{
+  "name": "perfil-caua",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <main style={{
+      backgroundColor: "#000",
+      color: "#fff",
+      minHeight: "100vh",
+      padding: "2rem",
+      fontFamily: "Arial, sans-serif"
+    }}>
+      <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+        <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
+          Bem-vindo ao Perfil de Cauã
+        </h1>
+
+        <p style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
+          Esse site é como um Tinder exclusivo — feito pra te apresentar o Cauã, um cara de fé, vibe tranquila e que tá procurando alguém especial.
+        </p>
+
+        <p style={{ marginTop: "1rem" }}>
+          Clique abaixo pra saber mais:
+        </p>
+
+        <Link href="/caua">
+          <a style={{
+            display: "inline-block",
+            marginTop: "1rem",
+            padding: "12px 20px",
+            backgroundColor: "#444",
+            color: "#fff",
+            textDecoration: "none",
+            borderRadius: "6px",
+            fontWeight: "bold"
+          }}>
+            Ver perfil completo
+          </a>
+        </Link>
+      </div>
+    </main>
+  );
+}
+export default function PerfilCaua() {
+  return (
+    <main style={{
+      backgroundColor: "#000",
+      color: "#fff",
+      minHeight: "100vh",
+      padding: "2rem",
+      fontFamily: "Arial, sans-serif"
+    }}>
+      <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+        <h1 style={{ fontSize: "2.2rem", marginBottom: "1rem" }}>Cauã, 19 anos</h1>
+
+        <p style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
+          Me chamo <strong>Cauã</strong>, tenho 19 anos e sou do <strong>Rio de Janeiro</strong>.  
+          Sou uma pessoa tranquila, que valoriza a fé, boas conversas e conexões reais.  
+          Criei esse site pra facilitar um pouco as coisas e mostrar quem eu sou de forma direta, sem enrolação.
+        </p>
+
+        <div style={{
+          backgroundColor: "#111",
+          padding: "1.2rem",
+          borderRadius: "8px",
+          marginTop: "2rem",
+          lineHeight: "1.6"
+        }}>
+          <h3>Interesses</h3>
+          <ul style={{ paddingLeft: "1.2rem" }}>
+            <li>Música e boas vibes</li>
+            <li>Conversas profundas</li>
+            <li>Praia e natureza</li>
+            <li>Espiritualidade e fé</li>
+          </ul>
+
+          <h3 style={{ marginTop: "1.5rem" }}>O que estou procurando</h3>
+          <p>
+            Uma garota com princípios, fé e que curta conversar, rir, e dividir bons momentos.
+            Não é sobre aparência, é sobre conexão.
+          </p>
+        </div>
+
+        <p style={{ marginTop: "2rem", fontStyle: "italic", fontSize: "0.95rem", color: "#aaa" }}>
+          Se você se identificou, já sabe onde me encontrar.
+        </p>
+
+        <div style={{ marginTop: "2rem", textAlign: "center" }}>
+          <a 
+            href="https://wa.me/5521995771015" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{
+              backgroundColor: "#25D366",
+              color: "#fff",
+              padding: "12px 20px",
+              textDecoration: "none",
+              borderRadius: "6px",
+              fontWeight: "bold"
+            }}
+          >
+            Falar com Cauã no WhatsApp
+          </a>
+        </div>
+      </div>
+    </main>
+  );
+}
